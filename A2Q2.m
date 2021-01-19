@@ -15,6 +15,7 @@ Gx = conv2(input_img, xFilter, 'same');
 Gy = conv2(input_img, yFilter, 'same');
 [rows, cols] = size(input_img);
 
+%Todo: confirm image gradient and second moment matrix calculations
 %calculate matrices to be used in the second moment matrix
 Ix = Gx.^2;
 Iy = Gy.^2;
@@ -49,6 +50,7 @@ for k = 0: +1: 16
         end
     end
 
+    %Todo: choose better harris-stevens neighborhood operator
     %select the maximum harris-stevens operators within the neighborhood
     result = zeros(rows,cols);
     count1 = 0;
