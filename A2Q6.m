@@ -25,6 +25,9 @@ for i = 2: +1: 15
     filteredI1C = imfilter(input_img, filter1C);
     filter2C = fspecial('gaussian', round(sigmaCenter * 3), sigmaCenter);
     filteredI2C = imfilter(input_img, filter2C);
+    
+    %Todo: convert gaussian weighting using convolution to multiplication
+    
     centerSlice = filteredI2C - filteredI1C;
     %calculate threshold boundary so that only pixels with 26 neighbors can
     %be analyzed
