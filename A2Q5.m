@@ -52,6 +52,7 @@ for i = 2: +1: 15
     isCandidate = zeros(rows,cols);
     countCandidate = 0;
     thresholdDOG = 0;
+    %Todo: test maximum threshold capability for keypoint candidates
     
     %loop through the image pixels within the image boundaries
     for j = thresholdImageBoundary:+1:rowsEnd
