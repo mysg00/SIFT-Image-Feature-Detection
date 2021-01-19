@@ -55,6 +55,7 @@ for i = 2: +1: 15
     %thresholdDOG = 0 for the synthetic image and thresholdDOG = 0.5 for the
     %natural image
     thresholdDOG = 0.5;
+    %Todo: set proper threshold for individual keypoint intensities
     
     %loop through the image pixels within the image boundaries
     for j = thresholdImageBoundary:+1:rowsEnd
