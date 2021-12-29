@@ -1,4 +1,4 @@
-# computer-vision-sift
+# SIFT Image Feature Detection
  
 Implemented the SIFT (Scale Invariant Feature Transform) algorithm for image feature detection
 
